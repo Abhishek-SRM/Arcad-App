@@ -1,139 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quizo HTML Template - V.6</title>
-    <!-- FontAwesome-cdn include -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- Google fonts include -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&family=Poppins:wght@700;800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap-css include -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-    <!-- Animate-css include -->
-    <link rel="stylesheet" href="/assets/css/animate.min.css" />
-    <!-- Main-StyleSheet include -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
-  </head>
-  <body>
-    <div class="wrapper overflow-hidden">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- FontAwesome-cdn include -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- Google fonts include -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&family=Poppins:wght@700;800&display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap-css include -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <!-- Animate-css include -->
+  <link rel="stylesheet" href="/assets/css/animate.min.css" />
+  <!-- Main-StyleSheet include -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- Default form subscription -->
+  <!-- Section: Design Block -->
+  <section class="" id="userOption">
+    <!-- Jumbotron -->
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%); height: 100vh;">
       <div class="container">
-        <form
-          class="multisteps_form bg-dark position-relative overflow-hidden"
-          id="wizard"
-          method="POST"
-          action=""
-        >
-          <!------------------------- Step-1 ----------------------------->
-          <div class="multisteps_form_panel step">
-            <div class="question_title text-center text-uppercase">
-              <h1 class="animate__animated animate__fadeInRight animate_25ms">
-                What kind of services you are quiz?
-              </h1>
-            </div>
-            <div class="question_number text-center text-uppercase text-white">
-              <span class="rounded-pill">Question 1 to 5</span>
-            </div>
-            <div class="row pt-5 mt-4 form_items">
-              <div class="col-6">
-                <ul class="list-unstyled p-0">
-                  <li
-                    class="active step_1 animate__animated animate__fadeInRight animate_50ms"
-                  >
-                    <input
-                      id="opt_1"
-                      type="radio"
-                      name="stp_1_select_option"
-                      value="Well organized and Easy"
-                    />
-                    <label for="opt_1">Well organized and Easy</label>
-                  </li>
-                </ul>
+        <div class="row gx-lg-5 align-items-center" style="margin: 179px auto;">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="my-5 display-3 fw-bold ls-tight">
+              The best offer <br />
+              <span class="text-primary">for your business</span>
+            </h1>
+            <p style="color: hsl(217, 10%, 50.8%)">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Eveniet, itaque accusantium odio, soluta, corrupti aliquam
+              quibusdam tempora at cupiditate quis eum maiores libero
+              veritatis? Dicta facilis sint aliquid ipsum atque?
+            </p>
+          </div>
+
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="card">
+              <div class="card-body py-5 px-md-5">
+                <h1 class="text-center mb-5"> Choose the type of quiz</h1>
+                <form>
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="row">
+                    <div class="col-md-12 mb-4">
+                      <select class="form-control form-control-md" id="level">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12 mb-4">
+                      <select class="form-control form-control-md" id="qztype">
+                        <option value="9">General Knowledge</option>
+                        <option value="10">Entertainment: Books</option>
+                        <option value="11">Entertainment: Film</option>
+                        <option value="12">Entertainment: Music</option>
+                        <option value="13">Entertainment: Musicals &amp; Theatres</option>
+                        <option value="20">Mythology</option>
+                        <option value="30">Science: Gadgets</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Submit button -->
+                  <a  class="btn btn-primary btn-block mb-4" id="startquiz">
+                    Start Quiz
+                  </a>
+                  <!-- Register buttons -->
               </div>
-              <div class="col-6">
-                <ul class="list-unstyled p-0">
-                  <li
-                    class="step_1 animate__animated animate__fadeInRight animate_100ms"
-                  >
-                    <input
-                      id="opt_2"
-                      type="radio"
-                      name="stp_1_select_option"
-                      value="Transition Between Two"
-                    />
-                    <label for="opt_2">Transition Between Two</label>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-6">
-                <ul class="list-unstyled p-0">
-                  <li
-                    class="step_1 animate__animated animate__fadeInRight animate_150ms"
-                  >
-                    <input
-                      id="opt_3"
-                      type="radio"
-                      name="stp_1_select_option"
-                      value="Transitions are Shown"
-                    />
-                    <label for="opt_3">Transitions are Shown</label>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-6">
-                <ul class="list-unstyled p-0">
-                  <li
-                    class="step_1 animate__animated animate__fadeInRight animate_200ms"
-                  >
-                    <input
-                      id="opt_4"
-                      type="radio"
-                      name="stp_1_select_option"
-                      value="Generate a nice Color"
-                    />
-                    <label for="opt_4">Generate a nice Color</label>
-                  </li>
-                </ul>
-              </div>
+              </form>
             </div>
           </div>
-          <!---------- Form Button ---------->
-          <div class="form_btn">
-            <button
-              type="button"
-              class="prev_btn position-absolute text-uppercase border-0 text-white"
-              id="prevBtn"
-              onclick="nextPrev(-1)"
-            >
-              <span><i class="fas fa-arrow-left"></i></span> Back
-            </button>
-            <button
-              type="button"
-              class="next_btn rounded-pill position-absolute text-uppercase text-white"
-              id="nextBtn"
-              onclick="nextPrev(1)"
-            >
-              Next
-            </button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
-    <!-- jQuery-js include -->
-    <script src="/assets/js/jquery-3.6.0.min.js"></script>
-    <!-- Bootstrap-js include -->
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <!-- jQuery-counter-up-js include -->
-    <script src="/assets/js/countdown.js"></script>
-    <!-- jQuery-validate-js include -->
-    <script src="/assets/js/jquery.validate.min.js"></script>
-    <!-- Custom-js include -->
-    <script src="/assets/js/index.js"></script>
-  </body>
+    </div>
+    <!-- Jumbotron -->
+  </section>
+  <section class="" id="quizOption">
+    <!-- Jumbotron -->
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%); height: 100vh;">
+      <div class="container">
+        <div class="row gx-lg-5 align-items-center" style="margin: 179px auto;">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="ansCount">
+              <h4 class="text-dark p-2 border">Question : <span id ="questionCount">1</span> of <span>10</span></h4>
+              <h4 class="text-success p-2 border">Correct Answer : <span id="right">1</span></h4>
+              <h4 class="text-danger p-2 border">Wrong Answer : <span id="wrong">1</span></h4>
+            </div>
+            <p style="color: hsl(217, 10%, 50.8%)">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Eveniet, itaque accusantium odio, soluta, corrupti aliquam
+              quibusdam tempora at cupiditate quis eum maiores libero
+              veritatis? Dicta facilis sint aliquid ipsum atque?
+            </p>
+          </div>
+
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="card">
+              <div class="card-body py-5 px-md-5">
+                <h4 class="text-center mb-5" id="questionBar">Choose the type of quiz</h4>
+                <form>
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="row">
+                    <div class="arc_options">
+                       <div>
+                         <span class="arc_opt mb-2" id="arc_opt1" onclick="checker(0)">Option 1</span>
+                         <span class="arc_opt mb-2" id="arc_opt2" onclick="checker(1)">Option 1</span>
+                         <span class="arc_opt mb-2" id="arc_opt3" onclick="checker(2)">Option 1</span>
+                         <span class="arc_opt mb-2" id="arc_opt4" onclick="checker(3)">Option 1</span>
+                       </div>
+                    </div>
+                    <!-- Submit button -->
+                    <a class="btn btn-primary btn-block mb-4 mt-3" id="nextBtn">
+                      Next
+                    </a>
+                    <a class="btn btn-warning btn-block mb-4 mt-3" id="finishBtn">
+                      Finish
+                    </a>
+
+                    <!-- Register buttons -->
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+  </section>
+ 
+  <section class="" id="userScore">
+    <!-- Jumbotron -->
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%); height: 100vh;">
+      <div class="container">
+        <div class="row gx-lg-5 align-items-center" style="margin: 179px auto;">
+          <div class="col-lg-12 mb-5 mb-lg-0">   
+            <div class="d-flex justify-content-center">
+               
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+  </section>
+
+</body>
+<!-- Custom-js include -->
+<script src="/assets/js/index.js"></script>
+
 </html>
